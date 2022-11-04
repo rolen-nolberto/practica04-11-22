@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/historia', function () {
     return view('hisroria');
 });
+
+Route::get('/webb', function () {
+    return view('webb');
+});
