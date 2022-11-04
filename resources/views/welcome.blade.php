@@ -49,7 +49,7 @@
         <div class="nav">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-                    <a href="#" class="navbar-brand">MENU</a>
+                    <a href="#" class="navbar-brand">LUGARES POPULARES</a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -129,8 +129,223 @@
 
         <style>
             body {
-                font-family: 'Nunito', sans-serif;
-            }
+    color: #353535;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background: #f3f6ff;
+}
+
+a {
+    color: #FF6F61;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #353535;
+    outline: none;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+}
+
+@media(min-width: 992px) {
+    .container-fluid {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+}
+
+
+/**********************************/
+/******** Back to Top CSS *********/
+/**********************************/
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #FF6F61;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 4px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+
+.back-to-top i {
+    padding-top: 12px;
+    color: #ffffff;
+}
+
+
+/**********************************/
+/********* Form Input CSS *********/
+/**********************************/
+.form-control,
+.custom-select {
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    color: #999999;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px
+}
+
+.form-control:focus,
+.custom-select:focus {
+    box-shadow: none;
+    border-color: #FF6F61;
+}
+
+.custom-radio,
+.custom-checkbox {
+    margin-bottom: 15px;
+}
+
+.custom-radio .custom-control-label::before,
+.custom-checkbox .custom-control-label::before {
+    background: #dddddd;
+    border-color: #dddddd;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    color: #ffffff;
+    background: #FF6F61;
+    border-color: #FF6F61;
+    box-shadow: none;
+}
+
+.btn {
+    color: #FF6F61;
+    background: #ffffff;
+    border: 1px solid #FF6F61;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    color: #ffffff;
+    background: #FF6F61;
+    box-shadow: none;
+}
+
+
+/**********************************/
+/******* Normal Slider CSS ********/
+/**********************************/
+.normal-slider .slick-prev,
+.normal-slider .slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    opacity: 0;
+    transition: .5s;
+    background: rgba(255, 111, 97, .7);
+    border-radius: 4px;
+}
+
+.normal-slider .slick-prev {
+    left: 55px;
+}
+
+.normal-slider .slick-next {
+    right: 55px;
+}
+
+.normal-slider.slick-slider:hover .slick-prev {
+    left: 15px;
+    opacity: 1;
+}
+
+.normal-slider.slick-slider:hover .slick-next {
+    right: 15px;
+    opacity: 1;
+}
+
+.normal-slider .slick-prev:hover,
+.normal-slider .slick-prev:focus,
+.normal-slider .slick-next:hover,
+.normal-slider .slick-next:focus {
+    background: rgba(0, 0, 0, .7);
+}
+
+.normal-slider .slick-prev:hover::before,
+.normal-slider .slick-prev:focus::before,
+.normal-slider .slick-next:hover::before,
+.normal-slider .slick-next:focus::before {
+    color: #FF6F61;
+}
+
+.normal-slider .slick-prev::before,
+.normal-slider .slick-next::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.normal-slider .slick-prev::before {
+    content: "\f104";
+}
+
+.normal-slider .slick-next::before {
+    content: "\f105";
+}
+
+.normal-slider .slick-dots {
+    bottom: 15px;
+}
+
+.normal-slider .slick-dots li button:before {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.normal-slider .slick-dots li.slick-active button:before {
+    color: #FF6F61;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+
+/**********************************/
+/********** Top Bar CSS ***********/
+/**********************************/
+.top-bar {
+    padding: 3px 0;
+    font-size: 14px;
+    color: #FF6F61;
+    background: #000000;
+}
+
+.top-bar i {
+    margin-right: 5px;
+}
+
+.top-bar .col-sm-6:first-child {
+    text-align: left;
+}
+
+.top-bar .col-sm-6:last-child {
+    text-align: right;
+}
+
         </style>
     </head>
     <body class="antialiased">
